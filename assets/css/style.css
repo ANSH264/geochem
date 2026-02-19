@@ -362,7 +362,6 @@ body {
   transform-origin: center center;
 }
 span {
-  /* color: var(--contrast-color); */
   font-weight: 600;
   font-size: 20px;
   line-height: 1.3;
