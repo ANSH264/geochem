@@ -1,4 +1,15 @@
-  /**
+gsap.registerPlugin(ScrollTrigger);
+gsap.from(".main_heading", {
+  scale: 0.8,
+  opacity: 0,
+  duration: 1,
+  ease: "power2.out"
+});
+
+
+
+
+/**
    * Initiate glightbox
    */
   const glightbox = GLightbox({
