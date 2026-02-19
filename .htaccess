@@ -1,0 +1,13 @@
+# Enable Rewrite Engine
+RewriteEngine On
+
+# Prevent redirect loop
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+
+# Remove .html extension from URLs
+RewriteRule ^(.+)\.html$ /$1 [R=301,L]
+
+# Internally map extensionless URLs to .html files
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L]
